@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Timer!!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <style media="screen">
+            #time{
+
+                font-size:30px;
+                background-color:green;
+                color:white;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                height:100px;
+                width:600px;
+                text-align:center;
+
+            }
+            body{
+                background-image:linear-gradient(to right,black,maroon);
+                font-family: 'Koh Santepheap', cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="p-3" style="color:white;text-align: center;">🎈🎈Birthday🧡Countdown🎈🎈</h1>
+        <div id="time">
+
+        </div>
+
+    </body>
+    <script type="text/javascript">
+        var t=10;
+
+        function showtime()
+        {
+            var div_id=document.getElementById('time');
+            if(t>0){
+            div_id.innerHTML=(t--)+"s";
+        }
+            else {
+                div_id.innerHTML="🎈🎈Happy🤩🤩Birthday🎈🎈";
+                console.log(t);
+            }
+
+        }
+
+        setTimeout(showtime);
+        setTimeout(showtime,1000);
+        setTimeout(showtime,2000);
+        setTimeout(showtime,3000);
+        setTimeout(showtime,4000);
+        setTimeout(showtime,5000);
+        setTimeout(showtime,6000);
+        setTimeout(showtime,7000);
+        setTimeout(showtime,8000);
+        setTimeout(showtime,9000);
+        setTimeout(showtime,10000);
+
+    </script>
+</html>
